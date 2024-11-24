@@ -26,14 +26,28 @@ img {
     border: var(--border);
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
+    float: right;
+    position: relative;
 }
 
 p {
     padding: 0;
+    width: 300px;
 }
 
 main {
-    max-width: 500px;
+    max-width: none;
+}
+
+main p {
+    display: flex;
+    align-items: center;
+    height: 14rem;
+}
+
+footer p {
+    position: absolute;
+    left: 47.5%;
 }
 
 aside {
@@ -43,15 +57,19 @@ aside {
     padding: var(--padding);
     background-color: var(--background-color);
     color: var(--color);
+    position: relative;
+    float: inline-start;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    top: 15px;
     margin-bottom: 15px;
 }
 
 main img {
+    right: 125rem;
     width: 150px;
     height: auto;
 }
@@ -60,4 +78,5 @@ footer {
     margin-top: 15px;
     border-top: 3px dotted darkblue;
     text-align: center;
+    clear: both;
 }
