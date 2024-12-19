@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aaron Campbell | WDD 130</title>
-        <meta name="description" content="Aaron Campbell, WDD 130, Home Page">
-        <meta name="author" content="Aaron Campbell">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.W. Rafting</title>
+    <meta name="description" content="Welcome to our home page">
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
 
-        <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="wwr/about.html">Rafting Website</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Aaron Campbell | WDD 130</h1>
-            <img src="images/profile.webp" alt="Aaron Campbell" width="200">
-            <p>Hello, my name is Aaron and I'm an aspiring fullstack developer from Orange County, California, studying at BYU Idaho Online.</p>
-        </main>
-        <aside>
-            <h2>California</h2>
-            <img src="images/flag.png" alt="California Flag">
-            <p>California is a tourist hub with a big variety of cultures and attractions.</p>
-        </aside>
-        <footer>
-            <p>Aaron Campbell, California, USA<sup>&copy;</sup> 2024 </p>
-        </footer>
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/about.html">About Us</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="wwr/contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="wwr/images/background.jpg" alt="W.W. Rafting" class="full-width">
+            <h1>Experience the Thrill of White Water Rafting!</h1>
+        </section>
+        <section class="hero">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section class="hero">
+            <p>Want to know more about our exciting trips?</p>
+            <button type="menu"><a href="wwr/trips.html" class="hero">Check out our trips</a></button>
+        </section>
+        <section class="hero">
+            <div class="hero">
+                <img src="wwr/images/rafting4.jpg" alt="Rafting Adventure">
+                <p>Join us for unforgettable rafting adventures on the most exciting rivers.</p>
+            </div>
+            <div class="hero">
+                <img src="wwr/images/rafting5.jpg" alt="Family Rafting">
+                <p>Perfect for families and groups looking for a fun and safe experience.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Aaron Campbell, W.W. Rafting, 2024&copy;</p>
+        <nav>
+            <a href="facebook.com">
+                <img src="wwr/images/facebooklogo.png" alt="Facebook">
+            </a>
+            <a href="instagram.com">
+                <img src="wwr/images/instalogo.png" alt="Instagram">
+            </a>
+            <a href="x.com">
+                <img src="wwr/images/xlogo.png" alt="X">
+            </a>
+        </nav>
+    </footer>
+</body>
 </html>
